@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <style>
+          html 
+          {
+               height :  100%;
+          }
+          body
+          {
+               min-height : 100vh;
+               color : whitesmoke;
+          }
+
+          label
+          {
+               font-size: 20px;
+               color:black;
+          }
+          
+     </style>
+</head>
+<body>
+     
+<form>
+     <!--we must speicfy the name attribute  on the input field
+     otherwiser this will not include in the form -->
+<label for="name" style="color:pink"> name </label>
+<input type ="text" id ="name" name = "name">
+<label for="input_file"> choose file </label>
+<input type ="file" id ="input_file" name ="_file">
+<button  type ="submit" id ="btn">  submit </button>
+</form>
+
+<script  src = "index.js">
+
+</script>
+</body>
+
+</html>
