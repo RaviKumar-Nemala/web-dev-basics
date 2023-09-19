@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <style>
+          body {
+               
+               height: 100%;
+
+               width: 100%;
+               
+               margin: 0;
+
+          }
+
+
+          .main_div
+          {
+
+              
+
+               height : 400px;
+
+               width :  400px ;
+
+               margin :  20px ;
+
+               background-color: black ;
+
+          }
+
+
+          #first_child_div 
+          {
+
+
+               color : white ;
+               
+               height:200px;
+
+               width : 350px;
+
+               font-size :  20px ;
+
+               background:blue;
+
+               padding: 40px;
+
+               /* sticks the size to its parent */
+
+               box-sizing:  border-box;
+
+          }
+
+          #second_child_div 
+          {
+
+
+               color : white ;
+               
+               height:200px;
+
+               width : 350px;
+
+               font-size :  20px ;
+
+               background:blue;
+
+               padding: 40px;
+
+               /* if the size if greter then the parent the it can cross the parent container */
+               
+               box-sizing:  content-box ;
+
+          }
+     </style>
+
+</head>
+
+<body>
+
+
+     <div class="main_div">
+
+          <div id="first_child_div">
+
+               <p>Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit.
+                    Commodi magnam veniam
+                    repellat qui reprehenderit fugit,
+                    numquam culpa provident aspernatur
+                    nemo.
+               </p>
+
+          </div>
+
+     </div>
+
+
+     <div class="main_div">
+
+          <div id="second_child_div">
+
+               <p>Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit.
+                    Commodi magnam veniam
+                    repellat qui reprehenderit fugit,
+                    numquam culpa provident aspernatur
+                    nemo.
+               </p>
+
+          </div>
+
+     </div>
+
+</body>
+
+</html>

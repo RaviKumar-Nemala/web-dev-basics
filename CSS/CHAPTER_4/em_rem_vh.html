@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     
+     <title>Document</title>
+     
+     <style>
+
+          body
+          {
+               margin : 0vh ;
+               
+               /* vh means view height */
+
+               height : 100vh;
+
+               /* vw means view width */
+
+               width :  100vw; 
+
+               background-color :rgb(224, 79, 7) ;
+              
+          }
+
+          /* em -> units related to the parent
+          font size */
+
+          .parent_div 
+          {
+
+               position : relative ;
+
+              color : blue ;
+
+              font-size: 10px ;
+               
+              height :  30% ;
+
+              width :  40% ;
+
+              margin : 20px ;
+
+              background-color: black ;
+
+              display : block;
+
+              text-align:  center ;
+
+          }
+
+          .first_div
+          {
+
+               position : relative  ; 
+
+               font-size :  3em;
+
+               height :  40% ;
+
+               width :  fit-content;
+
+               background-color: grey ;
+
+               top : 50% ;
+
+               left : 50% ;
+               
+               transform: translate(-50% ,  -50%);
+
+               text-align:  center ;
+
+          }
+
+          .second_div 
+          {
+               position : relative ;
+               
+               /* parent font size multiply by specified font size here */
+
+               font-size : 3em;
+
+               background-color: grey ;
+
+               height :  40% ;
+
+               width :  fit-content ;
+
+               top : 50% ;
+
+               left : 50% ;
+               
+               transform: translate(-50% ,  -50%);
+
+          }
+
+
+          /* units related to the root element of the html i.e body */
+          
+          /* default font size =  12 px then 12*4em =  48 px is the size of this div*/
+
+          #rem_example
+          {
+
+               position : relative ;
+
+               left :  50% ;
+               
+               top  : 50%;
+
+               transform : translate( -50% , -50% ) ;
+
+               height :  50% ;
+
+               width: 50% ;
+
+               background-color:  black ;
+
+               font-size: 4rem ;
+
+               color:  white ;
+
+               
+          }
+
+
+
+
+     </style>
+
+
+</head>
+
+<body>
+
+     <div class="parent_div">
+          parent_div 
+          <div class="first_div">
+               first_div 
+          </div>
+
+     </div>
+
+     <div class="parent_div">
+          parent
+          <div class="second_div">
+               second_div 
+          </div>
+
+     </div>
+
+     <div id ="rem_example"> 
+          REM_EXAMPLE
+     </div>
+
+
+</body>
+
+
+
+</html>

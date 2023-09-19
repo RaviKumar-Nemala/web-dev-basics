@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <style>
+          body
+          {
+               margin : 0  ;
+
+               padding : 0 ;
+
+               height :  100vh ;
+
+               width : 100vw ;
+
+               background: white ;
+
+          }
+
+          header
+          {
+               
+               min-height : 10rem ;
+
+               background-color:  black ;
+
+               display : flex ;
+
+               justify-content : center ;
+
+               align-items:  center ;
+
+               font-size : 25px ;
+
+          }
+
+          ul 
+          {
+               list-style : none ;
+          }
+
+          li 
+          {
+
+               float : left ;
+
+               padding :  20px ;
+
+               color : white ;
+               
+               background-color : pink;
+               
+               margin-right : 10px ;
+
+               margin-bottom : 10px ;
+               
+          }
+
+          ul li:hover
+          {
+
+               transform:  12;
+
+               z-index: 100;
+
+               background : orange solid ;
+
+          }
+
+          @media ( max-width:800px) {
+          
+               header{
+
+               position : fixed;
+
+               width  : 100vw ;
+
+               background-color: black;
+               
+               display : flex ;
+
+               justify-content : center ;
+
+               overflow-x : hidden ;
+               
+          }
+
+               ul   
+               {
+                    list-style:none;
+
+                    display : flex ;
+
+                    flex-direction: column ;
+                    
+                    flex-wrap: wrap ;
+
+               }
+               ul li 
+               {
+                    
+
+                    color: white ; 
+
+                    background-color : black ;
+
+                    padding-bottom : 20px ;
+
+               }
+
+               ul li:hover 
+               {
+
+                    background-color: lightcoral;
+
+                    border-radius :  30px;
+
+               }
+
+
+
+          }    
+
+
+
+     </style>
+</head>
+<body>
+
+     <header>
+          <ul>
+
+               <li>HOME</li>
+               
+               <li>ABOUT</li>
+               
+               <li>PORTFOLIO</li>
+               
+               <li>BLOG</li>
+               
+               <li>CONTACT</li>
+          
+          </ul>
+     </header>
+
+
+
+</body>
+
+
+
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+
+     <style>
+
+          body
+          {
+
+               margin: 0 ;
+
+               width : 100% ;
+
+               height : 100% ;
+
+          }
+
+          .main_div 
+          {
+
+               width :  60vw;
+               
+               height :  100%;
+
+               background-color :  black ;
+               
+               display : grid;
+
+              /* grid-template-columns:33% 33% 33%;
+               
+               grid-template-rows: 200px 200px;
+
+               grid-template-columns:  auto auto auto;
+
+               grid-row-gap : 10px;
+
+               grid-column-gap:20px;
+               */
+
+              
+
+             /*  grid-template-rows : 300px 300px;*/
+
+               /*minimum of 200pixels and maximum based on the content*/
+              /*1fr nothing but the flex grow */
+
+               grid-template-columns : repeat( auto-fit  , minmax(240px , 1fr));
+               
+               grid-auto-rows:  minmax( 100px ,auto-fit);
+
+               gap : 10px ;               
+
+          }
+
+          .div_1 
+          {
+               
+               box-sizing:  border-box ;
+
+               min-height : 50px;
+
+               background-color : green;
+
+               text-align : center;
+
+               font-size : 30px;
+
+               color: black ;
+
+          }
+          
+     </style>
+
+</head>
+<body>
+     
+     <div class="main_div">
+          <div class="div_1 first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur debitis vel quidem dolore consequuntur consequatur perferendis nam minima maxime vitae Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem cupiditate dicta veniam et recusandae laborum aliquid, ratione sint, debitis voluptate doloremque, non nam quidem consectetur quo maxime necessitatibus illum doloribus..</div>
+          <div class="div_1 third">div3</div>
+          <div class="div_1 fourth">div4
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas similique, recusandae fuga eaque inventore molestias labore tenetur harum nobis ipsam!</p>
+          </div>
+          <div class="div_1 fifth">div5
+               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt, laboriosam! A fugit magni explicabo perferendis inventore placeat repellat! Voluptates quis labore nulla ex earum exercitationem nemo eligendi dignissimos debitis inventore tempora odit maxime minus necessitatibus quidem, deserunt eius itaque adipisci. Facere itaque facilis excepturi libero consequatur. Rem sapiente commodi aliquam!</p>
+          </div>
+          <div class="div_1 sixth">div6
+               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus repellat illo sit sint error assumenda exercitationem esse, aperiam facilis cupiditate voluptates deserunt non praesentium nisi eum dicta nesciunt temporibus iste, tempore ipsum ab saepe rerum. Sit quam laboriosam aliquid laudantium vel iusto, quidem numquam amet quibusdam id, similique qui maiores?</p>
+          </div>
+          <div class="div_1 fifth">div5</div>
+          <div class="div_1 sixth">div6</div>
+          <div class="div_1 fifth">div5</div>
+          <div class="div_1 sixth">div6</div>
+          <div class="div_1 fifth">div5</div>
+          <div class="div_1 sixth">div6</div>
+     
+     </div>
+
+</body>
+</html>

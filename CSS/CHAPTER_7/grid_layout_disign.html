@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+
+     <style>
+          body {
+
+               margin: 0;
+
+               height: 100%;
+
+               width: 100%;
+
+               background: #6a7c87;
+
+               display : flex ;
+
+               justify-content: center;
+
+               align-items : center;
+
+          }
+
+          .main_div
+          {
+               
+               /* background-color:red*/
+
+               position : relative ;
+
+               width : 100%;
+
+               max-height : 100%;
+
+               display : grid;
+
+               grid-template-columns :  repeat(auto-fit ,  minmax(200px,  1fr) );
+
+               grid-auto-rows: minmax(100px ,  auto );
+
+               margin : 40px ;
+
+               gap:  10px ;
+
+          }
+
+          .content
+          {
+
+              /* border: 2px solid red ; */         
+               
+               font-size : 20px;
+
+               color : white ;
+
+               font-weight :  bolder ;
+
+               text-transform:  lowercase;
+
+               background :  #232B2B;
+               
+              text-align:center;
+
+              padding : 10px 0px;
+              
+          }
+          .content img 
+          {
+
+               max-width :  100px;
+
+
+          }
+
+          .content p 
+          {
+               
+               margin : 0 ;
+          
+
+          }
+          .main_div .content:nth-child(1)
+          {
+
+               grid-column :auto/span 2;
+              
+          }
+
+          
+          .second_item
+          {
+          
+              /*background : blue ;*/
+
+               grid-row : auto/span 2;
+
+          }
+
+          .last_child
+          {
+               grid-column:span 4;
+          }
+          @media(max-width:900px) {
+               
+
+
+               .main_div
+          {
+               
+               display : grid;
+
+               grid-template-columns :  repeat(auto-fit ,  minmax(50%,  1fr) );
+
+               grid-auto-rows: (auto );
+
+          }
+
+          .main_div .content
+          {
+          
+               grid-column:unset !important;
+
+               grid-row : unset !important;
+          
+          }
+
+          }
+
+     </style>
+</head>
+
+<body>
+
+     <div class="main_div">
+
+          <div class="content">
+
+               <img src="img_1.jpg" alt="">
+               <p>Lorem ipsum dolor sit amet </p>
+          </div>
+
+          <div class="content second_item">
+
+               <img src="img_1.jpg" alt="">
+               <p>Lorem ipsum dolor sit amet </p>
+          </div>
+
+          <div class="content third_item">
+
+               <img src="img_1.jpg" alt="">
+               <p>Lorem ipsum dolor sit</p>
+          </div>
+
+          <div class="content">
+
+               <img src="img_1.jpg" alt="">
+               <p>Lorem ipsum dolor sit amet  </p>
+          </div>
+
+          <div class="content ">
+
+               <img src="img_1.jpg" alt="">
+               <p>Lorem ipsum dolor sit amet</p>
+          </div>
+
+          <div class="content">
+
+               <img src="img_1.jpg" alt="">
+               <p>Lorem ipsum dolor sit amet </p>
+          </div>
+
+          <div class="content">
+
+               <img src="img_1.jpg" alt="">
+               <p>Lorem ipsum dolor sit amet consectetur </p>
+          </div>
+
+          <div class="content">
+
+               <img src="img_1.jpg" alt="">
+               <p>Lorem ipsum dolor sit amet consectetur </p>
+          </div>
+
+          <div class="content">
+
+               <img src="img_1.jpg" alt="">
+               <p>Lorem ipsum dolor sit amet consectetur </p>
+          </div>
+
+          <div class="content last_child">
+
+               <img src="img_1.jpg" alt="">
+               <p>Lorem ipsum dolor sit amet consectetur</p>
+          </div>
+
+     </div>
+
+</body>
+
+
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     
+</head>
+<style>
+     body
+     {
+          margin : 0 ;
+
+          height :  100% ;
+
+          width :  100% ;
+
+          float: left ;
+
+     }
+
+     .first
+     {
+          /* does not allow to set the height and width, as per the content it takes the space */
+
+          display :  inline ;
+
+     }
+
+     .second 
+     {
+          
+          margin-left: 40px;
+
+          color : blue  ;
+
+          height :  200px ;
+
+          width :  500px ;
+
+          /* it can be placed next to anoter div also allows to set the heigth and width */
+
+          display :  inline-block ;
+     }
+     
+     .third 
+     {
+
+          /*cannot be placed next to another div */
+
+          display : block ; 
+
+          color: red ;
+          
+          left :  30px ;
+
+     }
+
+</style>
+<body>
+     
+     <div class="first">
+     
+          HELLO 1 
+
+     </div>
+
+
+     <div class="second">
+
+
+     <h1>HELLO2</h1>
+     </div>
+     
+     <div class="third">
+
+     <h1>HELLO3</h1>
+
+     </div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+
+     <style>
+          *
+          {
+               margin : 0 ;
+
+               padding : 0 ;
+
+          }
+          body 
+          {
+
+               height : 100%;
+
+               width   : 100%;;
+
+               background-color: black ;
+
+          }
+
+
+          .main_div
+          {
+
+               height : auto ;
+
+               width : 100vw;
+
+               display : grid ;
+
+               grid-template-columns  : repeat( auto-fit , minmax(200px , 1fr) );
+
+               background-color : lightgreen ;
+
+               box-sizing:border-box;
+
+               grid-gap : 10px ;
+
+          }
+
+          .div_1
+          {
+               
+               box-sizing : border-box ;
+
+               text-align:center;  
+               
+               padding :  20px 10px;
+
+               background-color:white;;
+               
+
+          }
+
+          .div_1 h2
+          {
+               font-size:100px;
+
+               font-weight : bolder;
+
+               padding : 20px 0px;
+
+               opacity : 0.4;
+
+          }
+
+          .div_1 h3
+          {
+               
+               font-size:50px;
+
+               font-weight :  bolder ;
+
+               padding-bottom: 20px ;
+
+               color:rgb(240, 8, 240);
+
+               
+          
+          }
+
+          .div_1 p 
+          {
+
+               font-size: 19px;
+
+               text-align: start ;
+               
+               line-height :24px;
+
+               padding : 10px;
+
+               text-transform: capitalize;
+
+          }
+
+          .div_1:hover
+          {
+
+                    background-color: lightcoral;
+          }
+
+          .first 
+          {
+               
+               grid-column : span 1;
+
+          }
+
+     </style>
+
+</head>
+<body>
+
+     <div class="main_div">
+
+     <div class="div_1 first">
+
+          <h2>1</h2>
+          
+          <h3>Service One</h3>
+
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam cupiditate illum sequi tenetur magni fugiat dolorem ducimus accusantium similique aperiam.</p>
+     </div>
+
+     <div class="div_1 second">
+          <h2>2</h2>
+          <h3>Service Two</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi illo voluptatem minus, non corrupti incidunt quia architecto a voluptates debitis?</p>
+     </div>
+
+     <div class="div_1  third">
+          
+          <h2>3</h2>
+          <h3>Service Three</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae rerum velit cum maxime. Tempora dignissimos corporis aliquid optio cumque voluptatem.</p>
+     </div>
+
+     <div class="div_1">
+
+          <h2>4</h2>
+          <h3>Service Four</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae rerum velit cum maxime. Tempora dignissimos corporis aliquid optio cumque voluptatem.</p>
+     </div>
+     <div class="div_1">
+          
+          <h2>5</h2>
+          <h3>Service Five</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae rerum velit cum maxime. Tempora dignissimos corporis aliquid optio cumque voluptatem.</p>
+     </div>
+
+     </div>
+
+</body>
+
+
+
+
+</html>

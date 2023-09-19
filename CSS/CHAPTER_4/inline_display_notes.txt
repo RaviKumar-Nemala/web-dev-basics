@@ -1,0 +1,13 @@
+
+when the display is set to the inline 
+then it does not allow to set the height and width 
+as per the content it takes the height width
+
+margin-top and  padding top are not allowed 
+
+but remaing margin properties like margin-left 
+and right are allowed
+
+
+
+

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+
+     <style>
+
+          body 
+          {
+               margin : 0;
+
+               padding : 0 ;
+
+               background-color: black ;
+
+               min-height  :  100vh ;
+
+               width : 100%;
+
+          }
+
+          .div_1
+          {
+               
+               height : 30vh ;
+               
+               width :  40vw ;
+               
+               background-color  : blue ;
+
+               text-align : center;
+
+               display : flex ;
+
+               align-items : center ;
+
+               justify-content: center;
+          
+               position : relative ;
+               
+          
+          }
+          
+
+          /*centering content using the transform*/
+
+          .div_1::after
+          {
+               position : absolute ;
+
+               content: 'After';
+               
+               color : red ;
+
+               top :  0;
+
+               left : 50% ;
+
+               
+               transform:translate(-50%);
+
+      
+          }    
+     
+          .div_2
+          {
+
+               position : relative ;
+
+               height : 40vh ;
+
+               width  : 30vw ;
+
+               background-color:  lightgreen ; 
+               
+               left :  50% ;
+
+               transform:scale(1);
+
+               /*makes 1.3 times bigger in both x and y directions */
+
+               transform : scale( 1.3) ;
+
+               /*makes 1.5 times bigger then the x direction and  2 times bigger in the y direction */
+
+               
+               transform:scale(1.5,  2);
+
+               overflow : hidden ;
+
+          }
+
+          .div_2:hover
+          {
+               
+
+               /*2 times bigger x and y direction*/
+              
+               transform : scale(1.5, 2) ;
+              
+               transform:scale(2);
+               
+               /*
+               transform:scaleX(1);
+
+               transform:scaleY(2);
+               
+               */
+          }
+
+     </style>
+</head>
+<body>
+  
+     
+     <div class="div_1"> DIV1</div>
+     <div class="div_2">DIV2</div>
+</body>
+</html>

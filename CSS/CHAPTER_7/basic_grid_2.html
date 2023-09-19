@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <style>
+
+          body
+          {
+
+               padding : 0 ;
+
+               height : 100vh;
+
+               width : 100vw;
+
+               margin : 0 ; 
+
+               background-color: black ;
+          }
+
+          .main_div
+          {
+
+               position: absolute;
+
+               height :auto;
+
+               width : 100%;
+
+               margin : 30px;
+
+               display : grid ;
+
+               grid-template-columns:33% 33% 30%;
+
+               grid-template-rows :200px 200px 200px;
+
+               grid-gap :20px;
+     
+               border : 5px solid red ;
+               
+               background-color:  green;               
+          
+          }
+
+          .div_1
+          {
+               background-color: blue;
+               
+               min-width : 200px;
+
+          
+          }
+          .first
+          {
+               
+               background:black;
+
+               grid-column:span 2;
+               
+          }
+          
+     </style>
+</head>
+<body>
+
+<div class="main_div">
+<div class="div_1 first"></div>
+<div class="div_1 second"></div>
+<div class="div_1 third"></div>
+
+<div class="div_1 fourth"></div>
+
+<div class="div_1 fifth"></div>
+
+<div class="div_1 sixth"></div>
+
+<div class="div_1 seven"></div>
+
+</div>
+
+</body>
+</html>

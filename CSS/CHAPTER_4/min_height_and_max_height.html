@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+
+     <style>
+          body 
+          {
+               
+
+               position : absolute ;
+
+               margin :  0 ; 
+
+               height : 100% ;
+
+               width  : 100% ; 
+
+               background : black ;
+
+               
+          }
+
+/* if we specify the height less then the min-height then it does not allow */
+
+/* if we specify the height greater then the max-height then it does not allow */
+
+/* in both cases only the min max value of the height is adjusted */
+
+/* similarly for the width */
+
+          .first 
+          {
+
+               position: relative ;
+     
+               top :  50% ;
+
+               left : 50% ;
+
+               transform: translate( -50% , -50% );
+              
+
+               height :  120px;
+               
+               background-color:  lightblue;
+          
+               min-width: 60px ;
+          
+               width :  80px ;
+          
+               min-height:  60px ;
+
+          }
+     </style>
+
+</head>
+
+<body>
+     
+<div class="first"></div>
+
+
+</body>
+
+
+</html>

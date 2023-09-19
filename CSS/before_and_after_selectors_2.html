@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+
+     <style>
+
+     html
+     {
+          height : 100% ;
+
+          width : 100% ;
+
+          margin :0 ;
+          
+          padding : 0 ;
+
+          overflow-x: hidden;
+
+     }
+      body 
+     {
+
+          height : 100%;
+          
+          width  : 100% ;
+     
+          background-color: black ;
+
+     }
+
+     header 
+     {
+
+          min-height  :100%;
+
+          width : 100% ;
+
+          margin :0px;
+          
+          padding : 0px;
+
+          position:absolute;
+          
+          top : 0px;
+          
+          left : 0px;
+
+          
+     }
+     header::before{
+
+          position:absolute;
+
+          content : "";
+          
+          width : 100% ; 
+     
+          height : 100% ;
+
+          background : url(./temp.jpeg);
+
+          background-repeat: no-repeat;
+
+          background-size:cover;
+
+          background-position: center;
+
+          aspect-ratio: 1/1;
+
+          z-index:-1;
+
+          opacity: 0.3;
+          
+     }
+
+
+
+
+     header ul 
+     {
+
+          height : 90% ;
+
+          display : flex ;
+
+          flex-direction: row ;
+
+          justify-content:  center ;
+          
+          list-style: none;
+     
+     }    
+
+     header ul li
+     {
+          
+          padding : 20px ;
+
+          color  : white ;
+
+          line-height: 70px;;
+
+          font-size : 25px
+
+     }
+
+
+
+
+
+     </style>
+
+</head>
+
+
+
+<body>
+
+<header>
+
+<ul class="menu_content">
+
+     <li>HOME</li>
+     <li>CONTACT US </li>
+     <li>ABOUT US</li>
+     <li>COURSES</li>
+
+</ul>
+
+</header>
+
+
+</body>
+
+
+
+
+
+</html>

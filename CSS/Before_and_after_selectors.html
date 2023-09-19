@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <style>
+          body 
+          {
+               min-height : 100%;
+               
+               width : 100%;
+               
+               background-color: lightcoral;
+
+          }
+
+          .div_1
+          {
+          
+               height: 200px ;
+
+               width : 50%;
+
+               background-color: rgb(167, 90, 239);
+
+          }    
+
+          p
+          {
+               
+
+               position: relative ;
+
+               min-height:30px;
+
+
+               width : 100px;
+
+               color : white ;
+
+               border: 2px red  solid;
+          
+          }
+
+          p::before
+          {
+               
+
+               content: 'HELLO';
+
+               position : relative;
+
+               display : block;
+          
+               width :  100%;
+
+               color: red;
+
+          }
+
+          p::after
+          {
+
+               display : block;
+
+               content : 'LAST CONTENT';
+
+               padding : 20px;
+
+               color:red;
+               
+               width : auto ;
+               
+          }
+
+
+
+
+
+
+
+     </style>
+</head>
+
+<body>
+
+<div class="div_1">
+     
+     
+<p>WELCOME TO THE HELL </p>
+
+</div>
+     
+</body>
+
+
+</html>

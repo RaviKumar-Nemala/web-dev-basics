@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <style>
+          body 
+          {
+               margin : 0 ;
+          
+               padding : 0 ;
+
+               height : 100vh;
+               
+               width :  100vw;
+
+               background-color: black ;
+          }
+               
+
+          .div
+          {
+
+                    position : absolute;
+
+                    height  : max( 10rem , 200px);
+
+                    width :  max( 10% , 200px ) ;
+
+                    background-color: lightblue;
+                    
+                    margin-left :10px ;
+
+                    transform:rotateX( 50deg);
+                    transform: rotateY(50deg);
+                    transform: rotate(50deg);
+                     
+                    transform: rotate(0deg);
+
+                    /*moves in  x-axis*/
+                    /*transform: translate(90px);
+
+                    transform: translate(30px , 30px );
+                    */
+
+                    
+               }
+               
+          div:hover{               
+        
+               position: relative;
+
+               /*here only one value specified so it moves only x direction*/
+               transform:translate(100px);
+          
+          }
+
+
+
+     </style>
+</head>
+<body>
+ 
+
+     <div class="div">
+          BOX
+     </div>
+
+
+
+</body>
+</html>
