@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <link rel="stylesheet" href="header_style.css">
+     <title>Document</title>
+
+</head>
+
+<style>
+
+
+     *
+     {
+          padding: 0px ;
+
+          font-size : 18px ;
+
+          margin : 0px ;
+
+     }
+
+
+     html , body
+     {
+
+          min-height: 100vh ;
+
+          width : 100%;
+          
+          background-color : rgba(0, 0, 0, 0.495);
+
+     }
+
+
+     #table_div 
+     {
+          position: relative ;
+
+
+          height : 40vh ;
+
+          display : flex ;
+
+          justify-content:  center ;
+
+          align-items:  center ;
+
+     }
+     table
+     {
+
+          min-height   : fit-content;
+
+          min-width:  50vw ;
+
+          /*padding-top : 30px  ;*/
+
+          /*padding-bottom : 30px ;*/
+
+          
+     }
+
+     table > thead
+     {
+
+          width :  100%;
+
+          background-color : lightblue;
+
+
+     }
+
+     
+     tr 
+     {
+          
+          padding-right:  20px ;
+
+          padding-bottom: 20px ;
+
+          height : fit-content ;
+
+     }
+     
+
+     thead  > tr > th 
+     {
+
+          font-size :  20px ;
+
+          padding : 10px ; 
+
+          color : white ;
+
+          font-weight : bolder ;
+
+          text-align : center ;
+
+     }
+
+     tbody 
+     {
+          
+          margin-top: 30px ;
+
+          min-height : 200px ;
+
+          width : 100% ;
+
+          background-color: green;
+
+     }
+
+     tbody  > tr > td 
+     {
+          
+          text-align:  center ;
+
+          color : white ;
+
+          font-weight:  lighter ;
+
+          padding : 5px;
+
+     }
+
+</style>
+
+
+<body>
+
+     <header>
+
+          <div class="div_1">
+     
+               <div class="left_div">
+               <label for = "year_selector" > SELECT YEAR </label>
+               <select class  = "year_selector" id="year_selector">
+     
+               <option value="1st_year">1st_year</option>
+               <option value="2nd_year">2nd_year</option>
+               <option value="3rd_year">3rd_year</option>
+               <option value = "4th_year" >4th_year</option>
+
+               </select>
+     
+          </div>
+     
+          <div class="middle_div">
+          
+          <input type = "text" placeholder ="Enter Roll no " class ="search_bar" >
+          
+         <button class ="btn"><a href ="#" onclick="handle_text()"> Search </a></button>
+          
+          </div>
+          
+          <div class="right_div">
+     
+               <label for = "section_selector"> SELECT SECTION </label>
+               <select class  = "section_selector" id ="section_selector">
+                    
+                    <option value="None">None</option>
+                    <option value="a">a</option>
+                    <option value="b">b</option>
+                    <option value="c">c</option>
+                    <!-- <option value = "4th_year" > </option> -->
+          
+               </select>
+     
+               </div>
+     
+          </div>
+     
+     
+          </header>
+
+
+     <div  id = "table_div">
+     <table>
+
+     <thead  id = "table_header"> 
+
+          <tr>
+
+          <th> Student Name </th>
+
+          <th> Student Section </th>
+
+          <th> Student Roll </th>
+
+          </tr>
+
+     </thead>
+
+     <tbody id="table_body">
+
+          <tr>
+               <td> hell1</td>
+               <td> hell 2 </td>
+               <td> lajf lak f</td>
+          </tr>
+
+          <tr>
+               <td>lfj alkfj</td>
+               <td>helld</td>
+               <td>lkjf alk</td>
+          </tr>
+
+     </tbody>
+
+     </table>
+
+</div>
+
+<script src = "index_2.js"></script>
+</body>
+</html>

@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+
+     <style>
+          * {
+
+               padding: 0px;
+
+               margin: 0px;
+
+               box-sizing: border-box;
+
+          }
+
+          html 
+          {
+
+               height: 100vh;
+
+               width: 100%;
+
+          }
+
+          body 
+          {
+
+               min-height: 100vh;
+
+               width: 100%;
+
+               background-color: rgba(0, 0, 0, 0.495);
+
+          }
+
+          header 
+          {
+
+               position: absolute;
+
+               top: 0;
+
+               left: 0;
+
+               height: 100px;
+
+               width: 100%;
+
+               display: flex;
+
+               justify-content: space-between;
+
+               align-items: center;
+
+               line-height: 50px;
+
+               background-color: rgba(255, 255, 0, 0.765);
+
+
+          }
+
+          .list 
+          {
+          
+               list-style: none;
+
+               display: flex;
+
+               width: 100%;
+
+               justify-content: space-around;
+
+          }
+
+          a {
+
+
+               text-decoration: none;
+               
+               padding: 10px 10px;
+
+               font-size: 18px;
+
+               color: white;
+
+               font-weight: bolder;
+
+               border-radius: 20px;
+
+               border: 2px black solid;
+
+               background-color: black;
+          }
+
+          .main_div {
+
+               position: relative;
+
+               top: 95px;
+
+               left: 0;
+
+               min-height: 100vh;
+
+               width: 100%;
+
+               display: flex;
+
+               justify-content: center;
+
+               align-items: center;
+
+               background-color: black;
+          }
+
+          .temp {
+
+
+               min-height: 100px;
+
+               width: auto;
+
+               border: 2px solid green;
+
+               display: flex;
+
+               flex-direction: column;
+
+               flex-wrap:  wrap ;
+
+               padding: 10px;
+
+          }
+
+          .temp>ul>li {
+
+               display: flex;
+
+               list-style: none;
+
+               justify-content: space-between;
+
+               align-items: center;
+
+               line-height: 50px;
+
+               border: 2px solid blue;
+
+               box-sizing: border-box;
+
+               margin-bottom: 30px;
+               
+               flex-wrap : wrap;
+
+          }
+
+
+
+          label {
+
+
+               color: white;
+
+               font-size: 18px;
+
+               padding-right: 20px;
+
+               padding-left: 20px;
+
+
+          }
+
+          input {
+
+
+               flex-grow: 1;
+
+               padding: 10px;
+
+               padding-right: 0;
+
+               margin-bottom: 20px;
+
+               min-width: 300px;
+
+               position: relative;
+
+               top: 10px;
+
+               font-size: 19px;
+
+               color: blue;
+
+               background-color: black;
+
+               border: 1px red solid;
+
+
+          }
+
+
+          #btn {
+
+
+               width: 100%;
+
+               box-sizing: border-box;
+
+               padding: 10px;
+
+               margin: 10px 0px;
+
+               background-color: black;
+
+          }
+
+          #btn>a {
+
+
+               padding: 10px 25px;
+
+               font-size: 20px;
+
+               margin: 0 auto;
+
+               border-radius: 20px;
+
+               background-color: purple;
+
+               color: white;
+          }
+
+          #select_attr
+          {
+          
+               position : relative ;
+
+               right  : 40%;
+
+               padding : 10px ;
+               
+               font-size : 25px;
+               
+               color: pink ;
+
+               font-weight :  bolder;
+
+               background-color: black ;
+
+          }    
+
+          option 
+          {
+
+               font-size : 20px ;
+
+               text-align : center ;
+
+               padding : 5px ;
+
+               margin-bottom :  20px ;
+
+
+          }
+
+          table > thead
+     {
+
+          width :  100%;
+
+          background-color : lightblue;
+
+
+     }
+
+     
+
+     thead  > tr > th 
+     {
+
+          font-size :  20px ;
+
+          padding : 20px ; 
+
+          color : white ;
+
+          font-weight : bolder ;
+
+          text-align : center ;
+
+     }
+
+     tbody 
+     {
+          
+          /*margin-top: 30px ;*/
+
+          min-height : 200px ;
+
+          width : 100% ;
+
+          background-color: green;
+
+     }
+
+     tbody  > tr > td 
+     {
+          
+          text-align:  center ;
+
+          color : white ;
+
+          font-weight:  lighter ;
+
+          padding : 30px;
+
+          font-size :  20px ;
+
+          background-color: rgba(0, 0, 0, 0.509);
+          
+     }
+
+
+          .main_div > #record_adder {
+               display: none;
+          }
+
+          .main_div > #record_deleter {
+               display: none;
+          }
+          .main_div > #record_updater
+          {
+               display : none ;
+          }
+          .main_div > #record_getter {
+               display : none;
+          }
+
+          .main_div > #table_div 
+          {
+               display : none ;
+          }
+     </style>
+</head>
+
+<body>
+
+     <header>
+
+          <ul class="list">
+               <li id="record_adder"><a href="#" onclick="record_adder_click()"> Add Record </a></li>
+               <li id="record_delete"><a href="#" onclick="record_delete_click()">Delete Record </a> </li>
+               <li id="record_update"><a href="#" onclick="record_updater_click()">Update Record </a></li>
+               <li id="record_retrive"><a href="#" onclick = "record_getter_click()">Get Records </a> </li>
+          </ul>
+
+     </header>
+
+
+     <div class="main_div">
+
+          <div class="temp" id="record_adder">
+               <ul>
+                    
+                    <li>
+                         <label for="name">Name</label>
+                         <input type="text" id="name" placeholder="Enter Student Name">
+                    </li>
+
+                    <li>
+                         <label for="roll">Roll</label>
+                         <input type="text" id="roll" placeholder="Entere Roll">
+                    </li>
+
+                    <li>
+                         <label for="_section"> Section</label>
+                         <input type="text" id="_section" placeholder="Enter Section">
+                    </li>
+
+                    <li>
+
+                         <button id="btn" ><a id = "btn_1" href="#"> Add </a> </button>
+                    </li>
+                         
+                    
+               </ul>
+
+          </div>
+
+          <div class="temp" id = "record_deleter">
+
+               <ul>
+
+                    <li>
+                         <label for="name">Name</label>
+                         <input type="text" id="name" placeholder="Enter Student Name">
+                    </li>
+
+                    <li>
+                         <label for="roll">Roll</label>
+                         <input type="text" id="roll" placeholder="Entere Roll">
+                    </li>
+
+                    <li>
+                         <button id="btn"><a id = "btn_2" href="#"> Delete </a> </button>
+                    </li>
+
+          </div>
+
+          <div class="temp" id="record_updater">
+               
+               <ul class = "before_update">
+
+                    <li>
+                         <label for="name">Name</label>
+                         <input type="text" id="name" placeholder="Enter Student Name">
+                    </li>
+
+                    <li>
+                         <label for="roll">Roll</label>
+                         <input type="text" id="roll" placeholder="Entere Roll">
+                    </li>
+
+                    <li>
+                         <button id="btn"><a  id = "btn_3" href="#"> Search </a> </button>
+                    </li>
+
+               </ul>
+
+               <ul class ="during_update" style  = "display:none">
+
+                    <li>
+                         <label for="name">Name</label>
+                         <input type="text" id="name" placeholder="Enter Student Name">
+                    </li>
+
+                    <li>
+
+                         <label for ="new_name"> New Name</label>
+
+                         <input type = "text" id="new_name" placeholder = "Enter New Name">
+
+                    </li>
+
+                    <li>
+                         <label for="roll">Roll</label>
+                         <input type="text" id="roll" placeholder="Entere Roll">
+                    </li>
+
+
+                    <li>
+                         <label for="_section"> Section</label>
+                         <input type="text" id="_section" placeholder="Enter Section">
+                    </li>
+
+                    <li>
+                    <label>New Section </label>
+
+                    <select name="section" id="select_attr">
+                    
+                         <option value ="none"> None </option> 
+                         <option value ="a"> a </option> 
+                         <option value ="b"> b </option> 
+                         <option value ="c"> c </option>  
+                    </select>
+
+                    </li>
+
+               </ul>
+
+          </div>
+
+          <div class="temp" id="record_getter">
+
+               <ul>
+                    <li>
+                         <label for="name">Name</label>
+                         <input type="text" id="name" placeholder="Enter Student Name">
+                    </li>
+
+                    <li>
+
+                         <label for="roll">Roll</label>
+                         
+                         <input type="text" id="roll" placeholder="Entere Roll">
+                         
+                    </li>
+
+                    <li>
+
+                         <label  for = "section"> Section </label>
+                    
+                         <select name="section" id="select_attr">
+                    
+                         <option value ="none"> None </option> 
+                         <option value ="a"> a </option> 
+                         <option value ="b"> b </option> 
+                         <option value ="c"> c </option> 
+                         
+                    </select>
+
+                    </li>
+               
+                    <li>
+
+                         <button id="btn"><a id ="btn_4" href="#"> Search </a> </button>
+                    
+                    </li>
+         
+               </ul>
+          
+          </div> 
+
+
+          <div  id = "table_div">
+               <table id = "table">
+
+               <thead  id = "table_header"> 
+          
+                    <tr>
+          
+                    <th> Student Name </th>
+          
+                    <th> Student Section </th>
+          
+                    <th> Student Roll </th>
+                    
+                    
+                    </tr>
+          
+               </thead>
+          
+               <tbody id="table_body">
+          
+                    <tr>
+                         
+                         <td> hell1</td>
+                         <td> hell 2 </td>
+                         <td> lajf lak f</td>          
+                    </tr>
+          
+                    <tr>
+                         <td>lfj alkfj</td>
+                         <td>helld</td>
+                         <td>lkjf alk</td>
+                         
+                    </tr>
+
+               </tbody>
+
+               </table>
+
+
+     </div>
+
+<script src = "new_header.js" ></script>
+
+<script src = "new_header_2.js"></script>
+
+</body>
+
+</html>
