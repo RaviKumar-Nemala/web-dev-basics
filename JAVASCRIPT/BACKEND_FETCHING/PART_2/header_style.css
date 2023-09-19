@@ -1,0 +1,145 @@
+header
+{
+     
+     height :  20vh ;
+
+     width : 100%;
+
+     background-color: #fea49f;
+
+}
+
+header > .div_1
+{
+     
+     height :  100% ;
+
+     width : 100% ;
+     
+     box-sizing:  border-box ;
+
+     display : flex ;
+
+     flex-direction:  row ;
+
+     justify-content: space-around ;
+
+     gap :  15px ;
+
+     align-items:  center ;
+
+}
+
+.year_selector , .section_selector
+{
+     
+     font-size : 18px ;
+     
+     min-width :  70px ;
+
+     text-align:center;
+
+     padding : 10px ;
+
+     background-color: black;
+
+     color : white ;
+     
+}
+
+ option  
+{
+     
+     
+    margin-bottom: 10px;
+     
+     color :  white ;
+     
+     background-color: black ;
+     
+     font-size : 20px;
+     
+     font-weight : bold ;
+
+}
+
+ label 
+{
+     font-size: 20px ;
+
+     font-weight  : bolder;
+
+     color : black ;
+
+}
+
+.search_bar{
+     
+
+     background-color: black ;
+
+     color : white ;
+
+     font-size : 19px ;
+
+     font-family:  Arial, Helvetica, sans-serif;
+
+     padding :  10px ;
+
+     min-width :  35vw;
+
+}
+
+
+.right_div 
+{
+
+
+     padding :  10px 0px; 
+
+    /* margin-right : 30px ; 
+*/
+}
+
+.middle_div{
+     display : flex ;
+
+     flex-direction:  row ;;
+     
+     gap : 10px ;
+     
+}
+
+
+button
+{
+
+     padding:0px  10px ;
+     
+     background-color: black ;
+
+     color : white ;
+
+     border-radius:  30px ;
+
+     text-decoration: none;
+
+}
+
+
+a 
+{
+     
+     height : 100% ;
+
+     font-size : 18px ;
+     
+     font-weight:  bolder ;
+
+     text-decoration: none;
+     
+     color : white ;
+
+     background-color: black ;
+
+}

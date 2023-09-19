@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+<!-- <script  defer src ="event_bubbling.js"></script> -->
+<script defer src = "event_bubbling_appl.js"></script>
+<style>
+     body 
+     {
+          min-height : 100vh;
+          background-color: black;
+     }
+     .parent 
+     {
+          height : 50vh ;
+          width  : auto;
+          background-color: green ;
+          cursor : pointer;
+          display:flex;
+          gap : 10px;
+     }
+     .child_1 ,  .child_2
+     {
+          color : white ;
+          padding : 10px;
+          margin-bottom:2px;
+          background-color: black;
+          flex-basis: 200px;
+          height : 100px;
+          flex-grow: 1;
+     }
+     .child_1:hover , .child_2:hover 
+     {
+          background-color: white;
+          color:black;
+     }
+</style>
+</head>
+<body>
+     <div class="parent">
+          <div class="child_1">CHILD_1</div>
+          <div class="child_2">CHILD_2</div>
+     </div>
+</body>
+</html>

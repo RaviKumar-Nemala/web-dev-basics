@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <style>
+
+          *
+          {
+               padding : 0 ;
+
+               margin : 0 ;
+
+          }
+
+          html , body 
+          {
+               min-height : 100% ;
+
+               width : 100% ;
+          
+               background-color: rgb(107, 212, 207);
+          
+          }
+
+          #form_1
+          {
+
+               min-height : 100px;
+
+               background-color: darkgreen;
+
+          }
+
+          
+          .div_1 > label , .div_2 > label
+          {
+               display : inline;
+
+               font-size: 23px;
+
+               color : white ;
+
+               font-weight : bold;
+
+               padding :  0px 20px ;
+
+               margin-left : 0px;
+
+          }
+
+
+          .div_1 > label , .div_2 > label
+          {
+               display : block;
+
+               
+          }
+          .div_1 , .div_2
+          
+          {
+
+               min-height:  50px;
+
+
+               padding :  10px;
+
+               margin-bottom:20px;
+          }
+     
+          #user_name, #password
+          {
+
+               margin-top :  10px;
+
+               padding : 20px;
+
+               width :  50% ;
+
+               font-size : 17px ;
+     
+               color : white ;
+
+               font-weight : bolder ;
+
+               background-color : black ;
+
+               border-radius : 30px ;
+
+          }
+
+          #submit
+          {
+               margin-left :  90px ;
+
+               padding : 10px  ;
+
+               margin-bottom : 20px;
+
+               font-size  :19px;
+
+               width :  150px;
+          }
+
+
+          #place_text
+          {
+
+               min-height : 50px ;
+
+               width :  50% ;
+
+               font-size:  18px;
+
+               font-family: bold ;
+
+               color : white ;
+
+               background-color: black ;
+
+               padding :  10px ;
+
+               margin-top :  25px ;
+
+          }
+          
+
+     </style>
+
+</head>
+
+<body>
+     
+     <form enctype="multipart/form-data" id = "form_1" onsubmit="return validate_form()">
+
+     <div class="div_1">
+     
+     <label  for = "user_name"> NAME</label>
+
+     <input type="text" id = "user_name" placeholder="enter_your_name">
+
+</div>
+
+<div class="div_2">
+     <label for ="password">PASSOWORD
+     </label>
+          
+     <input type="password" id ="password" placeholder ="enter your password">
+     </div>
+
+     <input type="submit" id = "submit">
+     </form>
+
+<p id ="place_text"> </p>
+
+<script src  = "forms.js"> </script>
+
+</body>
+
+
+</html>
