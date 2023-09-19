@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+
+</head>
+
+<body>
+     <!-- here we are using the thead and tbody inorder to simply the styling for the table -->
+
+     <!-- caption tag specifies about the table -->
+
+     <caption style = "font-style : bolder ; font-size:60px ; color: black"> WITHOUT COLUMN SPAN </caption>
+     
+     <table id = table_1 style="font-size:medium; width : 500px; background-color:blue;  line-height : 50px" >
+          <thead style ="font-size:large; color: white ; " >
+               <tr style ="text-align:left">
+                    <!-- th stands for the table header -->
+                    <th>Sno</th>
+                    <th>Name</th>
+                    <th>RollNO</th>
+               </tr>
+
+          </thead>
+
+          <tbody style = "color:black; font-style:bolder ; font-weight :30px; font-size:20px">
+               <tr>
+                    <!-- td stands for the table data -->
+                    <td>1</td>
+                    <td>Ravi</td>
+                    <td>20</td>
+               </tr>
+
+               <tr>
+                    <td>2</td>
+                    <td>kumar</td>
+                    <td>21</td>
+               </tr>
+
+               <tr>
+                    <td>3</td>
+                    <td>Ravi kumar</td>
+                    <td>22</td>
+
+               </tr>
+
+          </tbody>
+
+     </table>
+
+     <br>
+     <br>
+
+
+     <caption  > WITH THE COLUMN SPAN </caption> 
+     
+     <table id = table_1 style="font-size:medium; width : 500px; background-color:pink;  line-height : 50px ; margin-top:30px" >
+          <thead style ="font-size:large; color: white ; " >
+               <tr style ="text-align:left">
+                    <!-- th stands for the table header -->
+                    
+                    <th colspan="2">Sno</th>
+                    <th >Name</th>
+                    <th>RollNO</th>
+               </tr>
+
+          </thead>
+
+          <tbody style = "color:black; font-style:bolder ; font-weight :30px; font-size:20px">
+               <tr>
+                    <!-- td stands for the table data -->
+                    <td>1</td>
+                    <td>Ravi</td>
+                    <td>20</td>
+               </tr>
+
+               <tr>
+                    <td>2</td>
+                    <td>kumar</td>
+                    <td>21</td>
+               </tr>
+
+               <tr>
+                    <td>3</td>
+                    <td>Ravi kumar</td>
+                    <td>22</td>
+
+               </tr>
+
+          </tbody>
+
+     </table>
+
+
+</body>
+
+
+</html>

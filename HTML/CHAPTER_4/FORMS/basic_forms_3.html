@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+<style>
+     body {
+          margin: 0;
+
+          padding: 0;
+
+          width: 100%;
+
+          background-color: blue;
+
+     }
+
+     #form_ {
+
+          position: absolute;
+
+          height: 600px;
+
+          background-color: gray;
+
+         width : 600px;
+
+          margin: 20px;
+
+          position: relative;
+
+     }
+
+     #main_div {
+
+          position: relative;
+
+          top: 35px;
+
+          margin-left: 30px;
+
+          margin-top: 30px;
+
+          margin-bottom: 30px;
+
+          color: white;
+
+     }
+
+     input {
+
+          height: 30px;
+
+          width: 100px;
+
+          margin-bottom: 40px;
+
+          margin-left: 30px;
+
+          color: black;
+
+          font-style: bolder;
+
+          font-weight: 15px;
+          
+          border: 2px;
+
+          border-radius: 2px;
+
+
+     }
+
+</style>
+
+<body>
+     <form id=form_>
+
+          <div id="main_div">
+               <DIV id=name_div>
+
+
+                    <!-- value tag is used to set the default value for the input box  -->
+                    <!-- place holder tag is used to set the description about the input box -->
+                    <label for="name">NAME </label>
+
+                    <input type="text" name="name" id="name" value="name" placeholder="Enter your name"
+                         style="height:40px; width:300px ; left:35px ; position:relative">
+
+               </DIV>
+
+               <div id="password_div">
+
+                    <label for="password">PASSWORD</label>
+
+                    <input type="password" name="password" id="password" placeholder="Enter your password"
+                         style="height:40px; width:300px">
+
+               </div>
+
+               <div >
+                    <label for="email">Email</label>
+                    <input type="email" placeholder="Enter email id " id="email" required style="width:300px">
+               </div>
+
+               <div>
+                    <label>AGE </label>
+                    <input type="number" placeholder="enter your age " id="age" required style="width:300px ; height : 40px" step ="4">
+               </div>
+
+               <div id ="data_div">
+                    <label for = "date" >DATE</label>
+                    <input type="date"  sytle="background-color: gray" placeholder="enter your date" id ="date">
+               </div>
+
+               <button id="_submit">
+                    SUBMIT
+               </button>
+
+          </div>
+
+     </form>
+</body>
+
+
+</html>

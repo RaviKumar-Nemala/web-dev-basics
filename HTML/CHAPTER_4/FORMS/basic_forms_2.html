@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+<style>
+     body{
+          margin :  0 ;
+          
+          padding : 0 ;
+
+          width :  100% ;
+
+          background-color: blue ;
+
+     }
+
+     #form_
+     {
+
+          height  : 300px ;
+
+          background-color:  gray;
+
+          width :  500px ;
+
+          margin :  50px ;
+
+          position: relative;
+
+     }
+     
+     #name_div{
+
+          position: relative;
+
+          top : 35px ;
+
+          margin-left : 30px;
+
+          margin-top : 30px ;
+
+          margin-bottom:  30px ;
+
+          color : white ;
+
+     }
+     #password_div{
+
+          position: relative;
+
+          top : 35px ;
+
+          margin-left : 30px;
+
+          margin-top : 30px ;
+
+          margin-bottom:  30px ;
+
+          color : white ;
+
+     }
+
+     #_submit
+     {
+
+          margin-left : 150px ;
+
+          margin-top : 40px;
+
+     }
+
+
+
+</style>
+
+<body>
+     <form  id = form_>
+     
+     <DIV id = name_div>
+          
+          <!-- input is a self closing tag -->
+
+          <!-- for attribute used to highlight the input box when ever we click on the label -->
+
+          <!-- make sure value at the for attribute and id of the input tag are same -->
+         
+          <label for = "name">NAME </label>
+
+          <input type="text" name ="name" id ="name" style="height:40px; width:300px ; left:35px ; position:relative">
+
+     </DIV>
+
+     <div id = "password_div">
+     
+          <label for ="password">PASSWORD</label>
+
+          <input  type="password" name="password" id ="password" style= "height:40px; width:300px">
+
+     </div>
+
+     <button id ="_submit">
+          SUBMIT
+     </button>
+
+     </form>
+</body>
+
+
+</html>

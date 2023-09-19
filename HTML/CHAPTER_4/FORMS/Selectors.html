@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <style>
+          body {
+               margin: 0;
+
+               padding: 0;
+
+               width: 100%;
+
+               background-color: blue;
+
+          }
+
+          #form_ {
+
+               position: absolute;
+
+               height: 600px;
+
+               background-color: gray;
+
+               width: 600px;
+
+               margin: 20px;
+
+               position: relative;
+
+          }
+
+          #main_div {
+
+               position: relative;
+
+               top: 35px;
+
+               margin-left: 30px;
+
+               margin-top: 30px;
+
+               margin-bottom: 30px;
+
+               color: white;
+
+          }
+		  
+		  #main_div ColorSelector {
+		  
+			height : 100px ;
+			
+			width : 500px ;
+			
+			background : blue ;
+			
+		  
+		  }
+
+
+            select{
+
+               height : 100px ;
+
+               width :  400px;
+
+               background-color: black ;
+
+               color :  white ; 
+               
+            }
+		  
+
+       
+     </style>
+</head>
+
+<body>
+
+     <form id=form_>
+
+          <div id="main_div">
+
+
+               <!-- set both input tag names as same the only one is selected among the two input tags -->
+               <div id = ColorSelector>
+                    
+       
+
+                    <label for="PickColor" >PICK COLOR </label>
+
+					<select name=PickColor id ="PickColor" >
+					
+					<option > Green </option > 
+					
+					<option> Red  </option > 
+					
+					<option> Blue</option > 
+					
+					</select>
+					
+               </div>
+			   
+          </div>
+
+     </form>
+
+</html>
